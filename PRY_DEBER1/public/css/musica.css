@@ -1,0 +1,185 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 30px;
+  color: #333;
+}
+
+/* --- TÍTULOS --- */
+#titulo-musica, #titulo-albumes {
+  text-align: center;
+  color: #111;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.subtitulo {
+  border-bottom: 3px solid #333;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+/* --- FILA DE CANCIONES (DOS COLUMNAS) --- */
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.columna {
+  flex: 1 1 45%;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* espacio entre canciones */
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+
+audio {
+  width: 100%;
+  outline: none;
+  border-radius: 10px;
+}
+
+/* --- FILA DE ÁLBUMES (UNO AL LADO DEL OTRO) --- */
+.fila-albumes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.tarjeta-album {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-album:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta-album img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* --- ACORDEÓN PERSONALIZADO --- */
+.acordeon {
+  margin-top: 15px;
+}
+
+.acordeon-titulo {
+  background-color: #e9ecef;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.acordeon-titulo:hover {
+  background-color: #dfe6f1;
+}
+
+.acordeon-contenido {
+  display: none;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border-left: 4px solid #0078ff;
+  background: #f1f3f5;
+  border-radius: 10px;
+}
+
+.acordeon-contenido ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+/* --- BOTÓN VER MÁS --- */
+.contenedor-boton {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.btn-vermas {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-vermas:hover {
+  background-color: #218838;
+}
+
+/* --- MODAL PERSONALIZADO --- */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-contenido {
+  background-color: white;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.modal-cerrar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal a {
+  color: #0078ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.modal a:hover {
+  text-decoration: underline;
+}
+
+/* --- RESPONSIVIDAD --- */
+@media (max-width: 768px) {
+  .columna, .tarjeta-album {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}

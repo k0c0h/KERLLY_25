@@ -1,0 +1,111 @@
+<div>
+    <h1 id="titulo-musica"><b>MÚSICA</b></h1>
+    <p>Estos son algunos de los géneros y álbumes que más escucho:</p>
+<div class="fila">
+    
+    <div class="columna">
+        <h2 id="KPop" class="subtitulo">K-Pop</h2>
+        <figure>
+            <audio controls muted preload="auto">
+                <source src="public/audio/WhatsApp Audio 2025-05-04 at 14.33.17.mpeg" type="audio/mpeg">
+            </audio>
+            <figcaption>Louder Than Bombs - BTS</figcaption>
+        </figure>
+        <figure>
+            <audio controls muted preload="auto">
+                <source src="public/audio/WhatsApp Audio 2025-05-04 at 14.33.19.mpeg" type="audio/mpeg">
+            </audio>
+            <figcaption>WHO - LAUV (feat. BTS)</figcaption>
+        </figure>
+    </div>
+
+    <div class="columna">
+        <h2 id="Pop" class="subtitulo">Pop</h2>
+        <figure>
+            <audio controls muted preload="auto">
+                <source src="public/audio/WhatsApp Audio 2025-05-04 at 14.33.18.mpeg" type="audio/mpeg">
+            </audio>
+            <figcaption>Dream It Possible - Delacey</figcaption>
+        </figure>
+        <figure>
+            <audio controls muted preload="auto">
+                <source src="public/audio/WhatsApp Audio 2025-05-04 at 14.33.18 (1).mpeg" type="audio/mpeg">
+            </audio>
+            <figcaption>Fallin' (Adrenaline) - Why Don’t We</figcaption>
+        </figure>
+    </div>
+
+</div>
+<div class="fila">
+<h1 id="titulo-albumes">ÁLBUMES QUE MÁS ESCUCHO</h1>
+</div>
+<div class="fila">
+    <div class="tarjeta-album">
+        <img src="public/img/album2.jpg" alt="Attacca - Seventeen">
+        <figcaption>Attacca - SEVENTEEN</figcaption>
+        <div class="acordeon">
+            <div class="acordeon-titulo" onclick="toggleAcordeon(this)">DETALLES DEL ÁLBUM</div>
+            <div class="acordeon-contenido">
+                <ul>
+                    <li><b>Fecha de publicación:</b> 22 de octubre de 2021</li>
+                    <li><b>Géneros:</b> K-pop, R&B, Synth pop, Dance pop</li>
+                    <li><b>Duración:</b> 35:23</li>
+                    <li><b>Discografía:</b> Pledis Entertainment</li>
+                    <li><b>Descripción:</b> “Attacca” significa atacar o comenzar sin pausa; es el noveno miniálbum de
+                        SEVENTEEN.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="tarjeta-album">
+        <img src="public/img/album3.jpg" alt="Sector 17 - Seventeen">
+        <figcaption>Sector 17 - SEVENTEEN</figcaption>
+        <div class="acordeon">
+            <div class="acordeon-titulo" onclick="toggleAcordeon(this)">DETALLES DEL ÁLBUM</div>
+            <div class="acordeon-contenido">
+                <ul>
+                    <li><b>Fecha de lanzamiento:</b> 18 de julio de 2022</li>
+                    <li><b>Género:</b> K-Pop</li>
+                    <li><b>Duración:</b> 42:00</li>
+                    <li><b>Compañía:</b> Pledis Entertainment</li>
+                    <li><b>Descripción:</b> “Sector 17” representa la unión de los 13 miembros, sus 3 subunidades y su
+                        fandom CARAT.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="tarjeta-album">
+        <img src="public/img/album1.jpg" alt="Midnight Memories - One Direction">
+        <figcaption>Midnight Memories - One Direction</figcaption>
+        <div class="acordeon">
+            <div class="acordeon-titulo" onclick="toggleAcordeon(this)">DETALLES DEL ÁLBUM</div>
+            <div class="acordeon-contenido">
+                <ul>
+                    <li><b>Fecha de publicación:</b> 25 de noviembre de 2013</li>
+                    <li><b>Géneros:</b> Pop, Pop Rock, Dance Pop</li>
+                    <li><b>Duración:</b> 35:23</li>
+                    <li><b>Discografía:</b> Syco Entertainment</li>
+                    <li><b>Descripción:</b> Un álbum sobre la juventud, amistad y disfrutar el momento.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contenedor-boton">
+    <button class="btn-vermas" onclick="abrirModal('modal-musica')">Ver más</button>
+
+</div>
+
+<div id="modal-musica" class="modal">
+    <div class="modal-contenido">
+        <button class="modal-cerrar" onclick="cerrarModal('modal-musica')">&times;</button>
+
+        <p>¿Quieres conocer más sobre mis gustos musicales?</p>
+        <p>Aquí puedes ver mis listas de Spotify:</p>
+        <a href="https://open.spotify.com" target="_blank">Ir a Spotify 🎵</a>
+    </div>
+</div>
+</div>

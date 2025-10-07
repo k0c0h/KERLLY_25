@@ -1,0 +1,52 @@
+/* Contenedor principal del menú */
+#menu-principal {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 650px;
+}
+
+/* Cada elemento del menú */
+.opcion-menu {
+  margin: 0 15px;
+}
+
+/* Enlaces del menú */
+.enlace-menu {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #555;
+  padding: 15px 10px;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+/* Efecto hover */
+.enlace-menu:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Enlace activo */
+.activo {
+  color: #007bff;
+}
+
+/* Colores personalizados */
+.color-verde {
+  color: #28a745;
+}
+
+.color-amarillo {
+  color: #ffc107;
+}
+
+.color-rojo {
+  color: #dc3545;
+}
